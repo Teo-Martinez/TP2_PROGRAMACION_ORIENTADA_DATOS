@@ -52,8 +52,9 @@ Por ejemplo, 3 g de proteínas por 50 g equivalen a 6 g por 100 g.
 
 Hay 16 columnas en total. CSV usa UTF-8, encabezado y separador coma. JSON es
 una lista de objetos planos. CSV expresa los valores como texto al leerlos;
-JSON conserva números y `null`. Los lectores de la etapa siguiente adaptarán
-ambos formatos a una representación común.
+JSON conserva números y `null`. Los lectores entregan listas de diccionarios
+con los mismos campos. La conversión de tipos se implementará al preparar
+los productos.
 
 ## Procedimiento y controles conocidos
 
@@ -77,5 +78,16 @@ La conversión kJ/kcal utiliza 4,184 kJ por kcal; 1000 mg equivalen a 1 g.
 
 Las pruebas comprueban cantidad, esquema, códigos, categorías, masas,
 conversiones conocidas del generador, ausencias y equivalencia de los archivos.
-Las entradas deliberadamente inválidas se añadirán con los lectores y las
-reglas de validación correspondientes.
+Los lectores ya tienen pruebas con archivos deliberadamente incorrectos en
+carpetas temporales. Los casos numéricos inválidos se añadirán junto con sus
+reglas de validación.
+
+## Ejemplo con nutrientes anidados
+
+`ejemplo_anidado.json` conserva las dos primeras fichas del catálogo, pero
+agrupa cada cantidad y unidad dentro de `nutrientes`. Se preparó a partir de
+esas fichas para demostrar la adaptación de estructura; no agrega productos
+al catálogo de 500. El generador regenera los dos archivos principales.
+Las pruebas verifican que este ejemplo siga siendo equivalente a esas fichas.
+
+Contrato de los lectores, formatos y errores: [docs/fuentes.md](../docs/fuentes.md).

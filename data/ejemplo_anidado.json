@@ -1,0 +1,66 @@
+[
+  {
+    "codigo": "0000000000001",
+    "nombre": "Cereal simulado 001",
+    "categorias": "cereales|envasados",
+    "base_g": 100,
+    "nutrientes": {
+      "energia": {
+        "valor": 320.0,
+        "unidad": "kcal"
+      },
+      "proteinas": {
+        "valor": 10000.0,
+        "unidad": "mg"
+      },
+      "carbohidratos": {
+        "valor": 60.0,
+        "unidad": "g"
+      },
+      "azucares": {
+        "valor": null,
+        "unidad": "mg"
+      },
+      "grasas": {
+        "valor": 5.0,
+        "unidad": "g"
+      },
+      "sodio": {
+        "valor": 0.12,
+        "unidad": "g"
+      }
+    }
+  },
+  {
+    "codigo": "0000000000002",
+    "nombre": "Lácteo simulado 001",
+    "categorias": "lacteos|envasados",
+    "base_g": 50,
+    "nutrientes": {
+      "energia": {
+        "valor": 146.44,
+        "unidad": "kj"
+      },
+      "proteinas": {
+        "valor": 3.0,
+        "unidad": "g"
+      },
+      "carbohidratos": {
+        "valor": 4000.0,
+        "unidad": "mg"
+      },
+      "azucares": {
+        "valor": 4.0,
+        "unidad": "g"
+      },
+      "grasas": {
+        "valor": 750.0,
+        "unidad": "mg"
+      },
+      "sodio": {
+        "valor": 0,
+        "unidad": "mg"
+      }
+    }
+  }
+]
