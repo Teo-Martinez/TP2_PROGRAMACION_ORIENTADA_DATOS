@@ -1,0 +1,2 @@
+# Python 3.10 o posterior.
+# Se utilizará únicamente la biblioteca estándar: sin paquetes externos.
