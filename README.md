@@ -5,7 +5,8 @@ Autor: Teo Martinez. TP2 de Programación Orientada a Datos, opción 9.
 Proyecto en desarrollo. Requiere Python 3.10 o posterior y su biblioteca
 estándar, sin dependencias externas. Incluye el generador, 500 fichas y lectores
 CSV/JSON y un modelo que convierte unidades y masas de referencia a 100 g.
-La consola de comparación se implementará en las próximas etapas.
+Incluye diagnóstico, validación y trazabilidad. La consola se implementará
+en las próximas etapas.
 
 El programa permitirá buscar productos por código, seleccionar categorías y
 comparar nutrientes por cada 100 g a partir de archivos CSV y JSON. Incluirá
@@ -24,3 +25,4 @@ Alcance y etapas previstas: [docs/propuesta.md](docs/propuesta.md).
 Datos, variables y limitaciones: [data/README.md](data/README.md).
 Lectores y manejo de errores: [docs/fuentes.md](docs/fuentes.md).
 Modelo y conversiones: [docs/modelo.md](docs/modelo.md).
+Limpieza y diagnóstico: [docs/preparacion.md](docs/preparacion.md).
