@@ -18,6 +18,6 @@ Las cantidades no se redondean durante la conversión. La muestra redondea sus
 etiquetas a seis decimales; puede haber pequeñas diferencias de coma flotante.
 El modelo copia categorías y nutrientes para no alterar los datos recibidos.
 
-Los controles de códigos, nombres, categorías y rangos por 100 g se incorporarán
-en la preparación de fichas. Los lectores siguen conservando tipos originales;
+La preparación comprueba códigos, nombres, categorías y rangos por 100 g.
+Los lectores conservan tipos originales;
 el modelo recibe cantidades numéricas ya interpretadas.

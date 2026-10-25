@@ -40,4 +40,4 @@ estadísticas son `None`; sin productos, la cobertura también es `None`.
 Como las categorías no son excluyentes, sus conteos no se suman como productos.
 
 En la muestra se esperan 500 válidos, cero rechazados y 72 azúcares desconocidos:
-428 conocidos y cobertura de 85,6 %. La exportación se añadirá con la consola.
+428 conocidos y cobertura de 85,6 %. La consola exporta este diagnóstico.

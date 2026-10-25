@@ -2,6 +2,8 @@
 
 Autor: Teo Martinez. TP2 de Programación Orientada a Datos, opción 9.
 
+[Repositorio](https://github.com/Teo-Martinez/TP2_PROGRAMACION_ORIENTADA_DATOS)
+
 Consulta y compara nutrientes por cada 100 g, a partir de 500 productos
 simulados en CSV o JSON. Admite distintas masas de referencia y unidades.
 Requiere Python 3.10 o posterior; no hay paquetes externos que instalar.
@@ -37,3 +39,6 @@ Modelo y conversiones: [docs/modelo.md](docs/modelo.md).
 Limpieza y diagnóstico: [docs/preparacion.md](docs/preparacion.md).
 Selección y ordenamiento: [docs/consultas.md](docs/consultas.md).
 Consola y demostración: [docs/uso.md](docs/uso.md).
+Entrega e historial: [docs/entrega.md](docs/entrega.md).
+Defensa: [docs/defensa.md](docs/defensa.md).
+Verificación: [docs/verificacion.md](docs/verificacion.md).

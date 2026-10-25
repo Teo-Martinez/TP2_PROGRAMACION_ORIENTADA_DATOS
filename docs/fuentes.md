@@ -9,7 +9,7 @@ El método abstracto `_leer(archivo)` delega la interpretación del formato en
 mayúsculas. Ambas entregan una lista no vacía de diccionarios planos.
 
 CSV conserva cantidades como texto y JSON conserva sus tipos originales.
-Todavía no se convierten cantidades, unidades ni masas de referencia: esas
+Los lectores no convierten cantidades, unidades ni masas de referencia: esas
 responsabilidades pertenecen al modelo y a la preparación de datos.
 Los códigos no se convierten a números. Ningún lector escribe en las entradas.
 
@@ -27,8 +27,8 @@ en `ErrorLectura` con una indicación para revisar comillas y tamaño de campos.
 No se cambia el límite global del módulo CSV. Los errores JSON incluyen su
 línea y columna. Una entrada sin registros también produce un error explícito.
 
-La validación del esquema completo, los rangos, los duplicados y los rechazos
-por ficha se implementarán en la etapa de preparación. Un error estructural
+La preparación valida el esquema completo, los rangos, los duplicados y los
+rechazos por ficha. Un error estructural
 de lectura detiene el archivo completo; no se omiten filas silenciosamente.
 
 ## JSON anidado
@@ -43,7 +43,7 @@ sin modificar el original. Se rechazan los nutrientes desconocidos, los
 objetos mal formados y la mezcla de campos planos y anidados de nutrientes.
 Un valor `null` se conserva como desconocido, y cero permanece como cero.
 Un campo no proporcionado sigue ausente: el lector no inventa sus valores.
-La preparación posterior comprobará que estén todos los campos obligatorios.
+La preparación comprueba que estén todos los campos obligatorios.
 
 Esta adaptación implementa el esquema acordado del TP. Otras estructuras,
 incluidas las de una API externa, requieren su propio adaptador.

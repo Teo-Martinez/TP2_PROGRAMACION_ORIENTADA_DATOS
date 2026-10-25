@@ -98,6 +98,12 @@ class TestProductos(unittest.TestCase):
         self.assertEqual(producto.categorias, ["prueba"])
         self.assertEqual(producto.nutrientes, original)
 
+    def test_conversion_de_entero_extremo_informa_value_error(self):
+        valores = nutrientes_ejemplo()
+        valores["sodio"] = (10 ** 308, "g")
+        with self.assertRaisesRegex(ValueError, "fuera de rango"):
+            self.crear(nutrientes=valores)
+
 
 if __name__ == "__main__":
     unittest.main()

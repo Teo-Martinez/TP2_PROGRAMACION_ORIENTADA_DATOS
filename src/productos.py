@@ -62,6 +62,9 @@ class ProductoNutricional:
                 valor /= 1000
             else:
                 valor *= 1000
-        comparable = valor / self.base_g * 100
+        try:
+            comparable = valor / self.base_g * 100
+        except OverflowError as error:
+            raise ValueError(f"{campo}: conversión fuera de rango.") from error
         validar_numero(comparable, campo)
         return comparable
