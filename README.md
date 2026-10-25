@@ -4,8 +4,19 @@ Autor: Teo Martinez. TP2 de Programación Orientada a Datos, opción 9.
 
 [Repositorio](https://github.com/Teo-Martinez/TP2_PROGRAMACION_ORIENTADA_DATOS)
 
+## Problema
+
+Comparar etiquetas puede llevar a errores cuando los productos usan distintas
+unidades o informan cantidades para diferentes porciones. Además, la falta de
+información sobre un nutriente puede confundirse con un valor cero. Una persona
+que consulta estas etiquetas necesita localizar los productos y comparar sus
+nutrientes sobre una misma base, conservando explícitamente los datos desconocidos.
+
 Consulta y compara nutrientes por cada 100 g, a partir de 500 productos
 simulados en CSV o JSON. Admite distintas masas de referencia y unidades.
+
+## Ejecución
+
 Requiere Python 3.10 o posterior; no hay paquetes externos que instalar.
 
 Abrí una terminal en la raíz del repositorio:
