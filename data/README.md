@@ -28,7 +28,7 @@ python -m unittest discover -s tests -v
 En Windows se puede usar `py`. El generador reemplaza `productos.csv` y
 `productos.json` en esta carpeta. No usa azar, red ni paquetes externos y
 produce los mismos archivos en ejecuciones sucesivas. Se conserva la muestra
-completa porque es pequeña. Todavía no se implementó la aplicación de consulta.
+completa porque es pequeña. La consola se ejecuta con `python -m src.main`.
 
 ## Unidad de análisis y variables
 
@@ -53,8 +53,8 @@ Por ejemplo, 3 g de proteínas por 50 g equivalen a 6 g por 100 g.
 Hay 16 columnas en total. CSV usa UTF-8, encabezado y separador coma. JSON es
 una lista de objetos planos. CSV expresa los valores como texto al leerlos;
 JSON conserva números y `null`. Los lectores entregan listas de diccionarios
-con los mismos campos. La conversión de tipos se implementará al preparar
-los productos.
+con los mismos campos. La preparación convierte cantidades y el modelo las
+expresa en unidades comunes por cada 100 g.
 
 ## Procedimiento y controles conocidos
 
@@ -79,8 +79,9 @@ La conversión kJ/kcal utiliza 4,184 kJ por kcal; 1000 mg equivalen a 1 g.
 Las pruebas comprueban cantidad, esquema, códigos, categorías, masas,
 conversiones conocidas del generador, ausencias y equivalencia de los archivos.
 Los lectores ya tienen pruebas con archivos deliberadamente incorrectos en
-carpetas temporales. Los casos numéricos inválidos se añadirán junto con sus
-reglas de validación.
+carpetas temporales. Los casos numéricos inválidos también se prueban por
+separado. `demo_errores/` contiene nueve fichas deliberadamente preparadas:
+dos aceptadas y siete rechazadas, en CSV y JSON equivalentes.
 
 ## Ejemplo con nutrientes anidados
 

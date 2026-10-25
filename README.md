@@ -2,24 +2,33 @@
 
 Autor: Teo Martinez. TP2 de Programación Orientada a Datos, opción 9.
 
-Proyecto en desarrollo. Requiere Python 3.10 o posterior y su biblioteca
-estándar, sin dependencias externas. Incluye el generador, 500 fichas y lectores
-CSV/JSON y un modelo que convierte unidades y masas de referencia a 100 g.
-Incluye diagnóstico, validación, búsquedas y comparaciones con trazabilidad.
-La consola se implementará en la próxima etapa.
+Consulta y compara nutrientes por cada 100 g, a partir de 500 productos
+simulados en CSV o JSON. Admite distintas masas de referencia y unidades.
+Requiere Python 3.10 o posterior; no hay paquetes externos que instalar.
 
-El programa permitirá buscar productos por código, seleccionar categorías y
-comparar nutrientes por cada 100 g a partir de archivos CSV y JSON. Incluirá
-500 productos simulados y conservará los valores desconocidos como ausencias.
-
-Desde la raíz del proyecto, para regenerar los datos y ejecutar las pruebas:
+Abrí una terminal en la raíz del repositorio:
 
 ```bash
-python scripts/crear_muestra.py
-python -m unittest discover -s tests -v
+python -m src.main --listar-categorias
+python -m src.main --codigos 0000000000001 0000000000002
+python -m src.main --categoria cereales --ordenar proteinas --descendente
+python -m src.main --archivo data/productos.json --categoria lacteos
+python -m src.main --archivo data/ejemplo_anidado.json
 ```
 
-En Windows podés usar `py` en lugar de `python`.
+En Windows podés usar `py` en lugar de `python`. Sin filtros compara todo el
+catálogo; `--help` muestra las opciones. Cada comparación reemplaza cuatro
+archivos en `outputs/`: `comparacion.csv`, `rechazos.csv`, `cambios.csv` y
+`diagnostico.json`. Usá `--salida otra_carpeta` para conservar otra ejecución.
+Los faltantes aparecen como "No disponible". Listar categorías no escribe
+archivos y avisa si rechaza fichas. Los errores terminan con código distinto de 0.
+
+Pruebas y regeneración de los datos:
+
+```bash
+python -m unittest discover -s tests -v
+python scripts/crear_muestra.py
+```
 
 Alcance y etapas previstas: [docs/propuesta.md](docs/propuesta.md).
 Datos, variables y limitaciones: [data/README.md](data/README.md).
@@ -27,3 +36,4 @@ Lectores y manejo de errores: [docs/fuentes.md](docs/fuentes.md).
 Modelo y conversiones: [docs/modelo.md](docs/modelo.md).
 Limpieza y diagnóstico: [docs/preparacion.md](docs/preparacion.md).
 Selección y ordenamiento: [docs/consultas.md](docs/consultas.md).
+Consola y demostración: [docs/uso.md](docs/uso.md).

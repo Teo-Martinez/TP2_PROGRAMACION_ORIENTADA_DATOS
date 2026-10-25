@@ -1,0 +1,10 @@
+codigo,nombre,categorias,base_g,energia,energia_unidad,proteinas,proteinas_unidad,carbohidratos,carbohidratos_unidad,azucares,azucares_unidad,grasas,grasas_unidad,sodio,sodio_unidad
+0000000000001,Cereal simulado 001,cereales|envasados,100,320.0,kcal,10000.0,mg,60.0,g,,mg,5.0,g,0.12,g
+0000000000002,Lácteo simulado 001,lacteos|envasados,50,146.44,kj,3.0,g,4000.0,mg,4.0,g,750.0,mg,0,mg
+0000000000001,Cereal simulado 001,cereales|envasados,100,320.0,kcal,10000.0,mg,60.0,g,,mg,5.0,g,0.12,g
+mal,Cereal simulado 001,cereales|envasados,100,320.0,kcal,10000.0,mg,60.0,g,,mg,5.0,g,0.12,g
+0000000000503,Cereal simulado 001,cereales|envasados,0,320.0,kcal,10000.0,mg,60.0,g,,mg,5.0,g,0.12,g
+0000000000504,Cereal simulado 001,cereales|envasados,100,320.0,kcal,-1,mg,60.0,g,,mg,5.0,g,0.12,g
+0000000000505,Cereal simulado 001,cereales|envasados,50,320.0,kcal,60,g,60.0,g,,mg,5.0,g,0.12,g
+0000000000506,Cereal simulado 001,cereales|envasados,100,320.0,kcal,10000.0,mg,60.0,g,90,g,5.0,g,0.12,g
+0000000000507,Cereal simulado 001,cereales|envasados,100,320.0,kcal,10000.0,mg,60.0,g,,mg,5.0,g,0.12,ml
